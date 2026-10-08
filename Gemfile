@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.4"
+gem "rails", "~> 8.1.0"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", ">= 2.1"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -40,7 +40,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem "brakeman", require: false
+  gem "brakeman", "~> 8.1", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
