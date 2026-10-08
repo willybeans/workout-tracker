@@ -9,7 +9,7 @@
 #   end
 
 unless Rails.env.production?
-	admin = User.find_or_initialize_by(email: "test@example.com")
-	admin.assign_attributes(username: "test", password: "password")
-	admin.save!
+  admin = User.find_or_initialize_by(email: "test@example.com")
+  admin.assign_attributes(username: "test", password: "password")
+  admin.save!
 end

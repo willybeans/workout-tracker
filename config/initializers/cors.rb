@@ -8,11 +8,11 @@
 frontend_origins = ENV.fetch("FRONTEND_ORIGINS", "http://localhost:8081").split(",").map(&:strip)
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-	allow do
-		origins(*frontend_origins)
+  allow do
+    origins(*frontend_origins)
 
-		resource "/api/*",
-			headers: :any,
-			methods: [:get, :post, :put, :patch, :delete, :options, :head]
-	end
+    resource "/api/*",
+      headers: :any,
+      methods: [ :get, :post, :put, :patch, :delete, :options, :head ]
+  end
 end
