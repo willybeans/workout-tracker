@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_04_21_015052) do
+ActiveRecord::Schema[8.0].define(version: 2026_09_29_000000) do
   create_table "exercises", force: :cascade do |t|
     t.integer "reps"
     t.string "type"
@@ -36,6 +36,7 @@ ActiveRecord::Schema[8.0].define(version: 2026_04_21_015052) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "workout_goals", force: :cascade do |t|
